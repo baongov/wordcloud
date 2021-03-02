@@ -1,0 +1,9 @@
+# server
+.ipynb_checkpoints
+app-env
+
+# client
+node_modules
+elm-stuff
+
+.vscode

@@ -1,0 +1,38 @@
+version: "2"
+
+services:
+  server:
+    container_name: wordcloud-server
+    restart: always
+    build:
+      context: server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server:/usr/src/
+    ports:
+      - 5050:5050
+    command: sh setup.sh
+
+  client:
+    container_name: wordcloud-client
+    build:
+      context: client
+      dockerfile: Dockerfile
+    volumes:
+      - ./client:/usr/src/
+    ports:
+      - 3030:3030
+    
+      
+  nginx:
+    container_name: wordcloud-nginx
+    ports:
+      - 80:80
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    depends_on:
+      server:
+        condition: service_started
+    links:
+      - server

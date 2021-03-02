@@ -1,0 +1,109 @@
+3+ year experience developing machine learning models at scale from inception to business impact.
+Deep understanding of modern machine learning techniques and mathematical underpinning, such as classifications, recommendation systems, optimization and etc.
+Working with data size from Terabyte to Petabyte scale
+Good experience with Python, Java and/or Scala is preferred (2+ years) with solid project experiences.
+Master’s Degree with at least 2 years machine learning experience or PhD.
+Experience in Deep Learning is a plus.
+Experience in product-ionizing machine learning model is a plus.
+
+3+ years experience working with and analyzing large data sets to solve problems
+A PhD or MS in a quantitative field (e.g., Economics, Statistics, Sciences, Engineering, CS)
+Expert knowledge of a scientific computing language (such as R or Python) and SQL
+Strong knowledge of statistics and experimental design
+The ability to communicate results clearly and a focus on driving impact
+ 
+Twitter hot trend detection
+ 
+4+ years experience doing quantitative analysis
+Fluency in SQL
+Core statistical knowledge
+Proven experience leading data-driven projects from definition to execution: defining metrics, experiment design, communicating actionable insights.
+Experience solving analytical problems using quantitative approaches
+Experience managing data sets through statistical software (ex. R, SAS) or other methods
+ 
+What are we looking for:
+ 
+Bachelor degree in Analytics, Data Science, Mathematics, Computer Science, Information
+Systems, Computer Engineering, or a related technical field
+At least 1-3 years of experience developing Data warehouse and Business
+Intelligence solutions
+Sound knowledge of data warehousing concepts , data modelling/architecture and SQL
+Ability to work in a fast-paced agile development environment
+Knowledge of programming languages such as Scala or Python
+Team player who can liaison with various stakeholders across the organization
+Excellent written and verbal communication skills
+Good to have but not must :
+ 
+Experience with relational as well as NoSQL data stores
+Experience with Big Data frameworks such as Hadoop, Spark, etc.
+Experience with Stream processing technologies such as Kafka, Spark streams, etc.
+Experience with performance tuning & query optimization of data warehouse
+systems
+Experience with Cloud technologies such as Azure, AWS, etc. would be nice to have
+Ability to drive initiatives and work independently
+Understanding of performance, scalability and reliability concepts
+ 
+ 
+Degree in computer science, engineering, mathematics or equivalent
+Previous commercial experience in a data-driven role
+Ability to write clean, maintainable and robust code in Python, Scala, Java or similar languages
+Knowledge of software engineering concepts and best practices
+Familiarity with the latest OSS, cloud, container, query languages and database technologies
+Confirmed experience building data pipelines in production and ability to work across structured, semi-structured and unstructured data
+Experience preparing data for analytics and following a data science workflow
+Commercial client-facing or senior stakeholder management experience
+ 
+Strong programming skills in languages such as Python/Java/Scala including building, testing and releasing code into production.
+Strong SQL skills and experience working with relational/columnar databases (e.g. SQLServer, Postgres, Oracle, Presto, Hive, BigQuery etc…)
+Knowledge of data modelling techniques and integration patterns.
+Practical experience writing data analytic pipelines
+Experience integrating/interfacing with REST APIs / Web Services
+Experience handling data securely.
+Experience with agile software delivery and CI/CD processes.
+A willingness to learn and find solutions to complex problems.
+Experience in data infrastructure ecosystem
+ 
+Requirements:
+3+ years of solid experience in building data pipelines.
+Proficient in SQL and at least one scripting language, preferably in Python or R, to clean, transform, and denormalise datasets.
+Experience with cloud infrastructure (e.g. AWS, GCP) and containerisation.
+Experience using shell scripting, big data frameworks (e.g. Hadoop, Spark, Kafka), relational databases (e.g. BigQuery, Redshift) and data lakes (e.g. Google Buckets).
+Familiar with web and customer analytics.
+Experience with machine learning is a plus.
+Love learning and sharing new technical knowledge, willing to take new challenges.
+Possess strong sense of ownership, adaptive to change.
+
+Bachelor’s degree in Computer Science, Physics, Mathematics, Economics or related disciplines is preferred but not necessary
+Programming skills (e.g. Python)
+Keen in data mining and machine learning technologies
+Applicants must be Singapore citizens
+ 
+5-8 years programming experience with Python / Java
+ 
+Experience with Data Engineering - Hadoop ecosystem and streaming
+ 
+Cloud experience, ideally with AWS services
+ 
+Excellent communication and collaborative skills
+ 
+Evaluating and defining requirements and problem statements.
+ 
+Developing user documentation, diagrams & flowcharts.
+ 
+Bachelor’s degree and above in Analytics, Information Systems Management, Computer Science or related fields
+3+ years of experience in data integration strategy, data modeling, designing, building ETLs, data ingestions, and/or transformations
+Experience in working with RDBMS such as DB2, Oracle, Microsoft SQL Server, PostgresSQL, Teradata, etc.
+Experience in data management and integration tool such as Informatica PowerCentre, Oracle Data Integrator, SAP Data Services, Ab Initio, IBM DataStage or Microsoft SSIS
+Process good knowledge and experience in data quality definition, data cleansing and data treatment/profiling process using industry standard tools like Informatica Data Quality, Trillium Software, SAS Data Quality, SAP Data Quality Management, etc. is an advantage
+Good knowledge of data warehouse and data management implementation methodology
+Good knowledge of the Data Management framework, including operating model, data governance, data management, data security, data quality and data architecture
+Experience in Hadoop environment like Cloudera and HortonWorks
+Experience in Cloud technologies including AWS, Azure, Google Cloud
+Experience in API Management software design and build
+Process good knowledge and experience in data visualisation concepts using tools such as Tableau, Microsoft PowerBI, Qlik, etc.
+Experience with Agile Methodology implementation
+Certification in any of database, data integration, data management, visualisation tools and cloud is an added advantage
+Knowledge about the infrastructure paradigms such as OS, network, etc. is an added advantage
+Ability to pick up new tools and able to be independent with minimal guidance from the project leads/managers
+Strong analytical and creative problem-solving capabilities
+Ability to establish personal credibility quickly and demonstrate expertise
