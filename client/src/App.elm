@@ -11,6 +11,7 @@ import Json.Encode as Encode exposing (encode)
 import Url exposing (percentEncode)
 
 
+
 -- MAIN
 
 
@@ -40,6 +41,7 @@ type alias Model =
     , list : List Word
     , message : String
     , serverHost : String
+    , success : Bool
     }
 
 
@@ -50,6 +52,7 @@ type alias Flags =
 type alias WordCloundRes =
     { success : Bool
     , data : List Word
+    , message : String
     }
 
 
@@ -59,6 +62,7 @@ init flags =
       , input = ""
       , list = []
       , message = ""
+      , success = True
       , serverHost = flags.serverHost
       }
     , Cmd.none
@@ -91,36 +95,35 @@ update msg model =
             ( { model | popup = False }, Cmd.none )
 
         FetchWordCloud ->
-            let
-                body =
-                    "text=" ++ percentEncode input
+            if String.isEmpty input then
+                ( { model | message = "Nothing to analyze", success = False }
+                , Cmd.none
+                )
 
-                path =
-                    "/wordcloud"
+            else
+                let
+                    body =
+                        "text=" ++ percentEncode input
 
-                url =
-                    model.serverHost ++ path
+                    path =
+                        "/wordcloud"
 
-                cmd =
-                    Http.expectJson GotWordCloud wordCloudDecoder
-                        |> post url (Http.stringBody "application/x-www-form-urlencoded" body)
-            in
-            ( { model | popup = False }, cmd )
+                    url =
+                        model.serverHost ++ path
 
-        GotWordCloud (Ok result) ->
-            case ( result.data, result.success ) of
-                ( data, True ) ->
-                    ( { model | list = data }
-                    , Cmd.none
-                    )
+                    cmd =
+                        Http.expectJson GotWordCloud wordCloudDecoder
+                            |> post url (Http.stringBody "application/x-www-form-urlencoded" body)
+                in
+                ( { model | list = [] }, cmd )
 
-                _ ->
-                    ( { model | message = "Error" }
-                    , Cmd.none
-                    )
+        GotWordCloud (Ok { data, message, success }) ->
+            ( { model | list = data, message = message, success = success }
+            , Cmd.none
+            )
 
         GotWordCloud (Err err) ->
-            ( { model | message = httpErrToStr err }
+            ( { model | message = httpErrToStr err, success = False }
             , Cmd.none
             )
 
@@ -134,18 +137,24 @@ update msg model =
 
 viewWordCloud : List Word -> Html Msg
 viewWordCloud list =
+    let
+        counts = 
+            list
+                |> List.map (\word -> word.count)
+                
+    in
     list
         |> List.map (\{ words, count } -> div [] [ text (String.join "|" words) ])
         |> div []
 
 
 view : Model -> Html Msg
-view { message, list } =
+view { message, list, success } =
     div [ class "container" ]
         [ h2 [] [ text "Input a paragraph" ]
         , textarea [ onInput InputText, class "input__textarea" ] []
         , button [ class "button__submit", onClick FetchWordCloud ] [ text "Generate Word Cloud" ]
-        , div [ class "message" ] [ text message ]
+        , div [ class "message", classList [ ( "message__error", not success ), ( "message__success", success ) ] ] [ text message ]
         , viewWordCloud list
         ]
 
@@ -176,6 +185,7 @@ wordCloudDecoder =
     succeed WordCloundRes
         |> required "success" bool
         |> optional "data" (list wordDecoder) []
+        |> optional "message" string ""
 
 
 post : String -> Body -> Expect Msg -> Cmd Msg

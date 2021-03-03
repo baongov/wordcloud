@@ -198,6 +198,7 @@ def worldcloudGenerator():
     # build response
     body = {
         'data': wordCount.to_dict(orient="records"),
+        'message': 'Wordcloud is generated successfully',
         'success': True,
     }
     res = jsonify(body)
