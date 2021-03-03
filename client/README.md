@@ -1,25 +1,27 @@
-# Introduction
-
-Init an Elm app quickly using Webpack.
+# Client
 
 ## Requirements
 
+- Docker v20+
 - Node v12+
+- Yarn 1.22.4
+- Python 3.6.10
 
-## Installing
+## Set up client alone
 
 1. Install NPM packages
+   ```
+   yarn
+   ```
+2. Setup enviroments. It can be the same as docker setup environments
+3. Start application
 
-```
-yarn
-```
+   ```
+   yarn start
+   ```
 
-2. Start the app
+4. Access http://0.0.0.0:3030
 
-```
-yarn run start
-```
+## Tests
 
-3. Browser http://localhost:3030/
-
-
+    Run ...
