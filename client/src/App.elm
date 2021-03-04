@@ -135,12 +135,13 @@ update msg model =
 -- VIEW
 
 
-viewWordCloud : List Word -> Html Msg
+viewWordCloud : List Word -> Html   Msg
 viewWordCloud list =
     let
         counts = 
             list
                 |> List.map (\word -> word.count)
+                |> List.maximum
                 
     in
     list

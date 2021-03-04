@@ -39,17 +39,17 @@
 
 ## Tests
 
-    Run ...
+Run ...
 
 ## Topics
 
 1. CORS origin issue
 
-   If running Wordcloud app with Docker compose, server will run at subdoman api.wordcloud.io. This can cause error to any request from client host www.wordcloud.io. To avoid this, we will let server app allow cors on client domain.
+   If running Wordcloud app with Docker compose, server will run at subdoman `api.wordcloud.io`. This can cause error to any request from client host `www.wordcloud.io`. To avoid this, we will let server app allow CORS on client domain.
 
 2. Develop with Jupyter
 
-   You can develop on Jupyter. To covert to a Jupyter note book to python file. Run command
+   You can develop on Jupyter. To covert to a Jupyter note book to python file, run command
 
    ```
    ipynb-py-convert app.ipynb build/app.py
@@ -57,7 +57,7 @@
 
 3. Update file requirements
 
-   In case that you need install a new python lib, to store this installation to requirment file, run command
+   In case that you need install a new python lib, to store this installation to requirement file, run command
 
    ```
    pip3 freeze > requirements.txt

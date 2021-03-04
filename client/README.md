@@ -2,10 +2,8 @@
 
 ## Requirements
 
-- Docker v20+
 - Node v12+
 - Yarn 1.22.4
-- Python 3.6.10
 
 ## Set up client alone
 
@@ -24,4 +22,4 @@
 
 ## Tests
 
-    Run ...
+Run ...
