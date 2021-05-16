@@ -44,10 +44,12 @@ type alias Model =
     { popup : Bool
     , input : String
     , list : List Word
+    , sentances : List String
     , message : String
     , serverHost : String
     , success : Bool
     , hoveredText : String
+    , clickedText : String
     , countValues : List Int
     , config : Config
     }
@@ -57,9 +59,13 @@ type alias Flags =
     { serverHost : String }
 
 
+type alias WordCloundData =
+    { wordCount : List Word, sentances : List String }
+
+
 type alias WordCloundRes =
     { success : Bool
-    , data : List Word
+    , data : WordCloundData
     , message : String
     }
 
@@ -73,6 +79,8 @@ init flags =
       , success = True
       , serverHost = flags.serverHost
       , hoveredText = ""
+      , clickedText = ""
+      , sentances = []
       , countValues = []
       , config =
             { limitCount = 0
@@ -93,6 +101,7 @@ type Msg
     | InputText String
     | GotWordCloud (Result Http.Error WordCloundRes)
     | WordHovering String
+    | WordClicked String
     | EditLimitCount String
 
 
@@ -135,7 +144,7 @@ update msg model =
         GotWordCloud (Ok { data, message, success }) ->
             let
                 countValues =
-                    data
+                    data.wordCount
                         |> List.map .count
                         |> List.foldr
                             (\count result ->
@@ -147,7 +156,13 @@ update msg model =
                             )
                             []
             in
-            ( { model | list = data, message = message, success = success, countValues = countValues }
+            ( { model
+                | list = data.wordCount
+                , sentances = data.sentances
+                , message = message
+                , success = success
+                , countValues = countValues
+              }
             , Cmd.none
             )
 
@@ -162,6 +177,9 @@ update msg model =
         WordHovering string ->
             ( { model | hoveredText = string }, Cmd.none )
 
+        WordClicked string ->
+            ( { model | clickedText = string }, Cmd.none )
+
         EditLimitCount limit ->
             let
                 newConfig =
@@ -175,7 +193,7 @@ update msg model =
 
 
 viewWord : Word -> ( Int, Int ) -> Model -> Html Msg
-viewWord { words, count } ( maxCount, minCount ) { hoveredText } =
+viewWord { words, count } ( maxCount, minCount ) { hoveredText, clickedText } =
     case words of
         head :: tail ->
             let
@@ -201,13 +219,18 @@ viewWord { words, count } ( maxCount, minCount ) { hoveredText } =
 
                 isHovering =
                     head == hoveredText
+
+                isClicked =
+                    clickedText == head
             in
             div
                 [ onMouseOver (WordHovering head)
+                , onClick (WordClicked head)
                 , class "word__item-container"
                 ]
                 [ span
                     [ class "word__item"
+                    , classList [ ( "clicked", isClicked ) ]
                     , style "opacity" (String.fromFloat opacity)
                     , style "font-size" (String.fromFloat wordSize ++ "px")
                     ]
@@ -215,12 +238,16 @@ viewWord { words, count } ( maxCount, minCount ) { hoveredText } =
                 , if isHovering then
                     let
                         similarWords =
-                            "Similar words: " ++ (tail |> String.join ", ")
+                            [ span [] [ text "Similar words: " ]
+                            , span [ class "text__highlight" ] [ tail |> String.join ", " |> text ]
+                            ]
 
                         countString =
-                            "Count: " ++ (count |> String.fromInt)
+                            [ span [] [ text "Count: " ]
+                            , span [ class "text__highlight" ] [ count |> String.fromInt |> text ]
+                            ]
                     in
-                    div [ class "word__tooltip" ] [ div [] [ text similarWords ], div [] [ text countString ] ]
+                    div [ class "word__tooltip" ] [ div [] similarWords, div [] countString ]
 
                   else
                     text ""
@@ -255,7 +282,7 @@ viewWordCloud list model =
     list
         |> List.map
             (\word ->
-                if word.count <= limitCount then
+                if word.count < limitCount then
                     text ""
 
                 else
@@ -269,23 +296,81 @@ durationOption duration =
     option [ value (String.fromInt duration) ] [ text (String.fromInt duration) ]
 
 
+viewSentances : Model -> Html Msg
+viewSentances { sentances, clickedText, list } =
+    if String.isEmpty clickedText then
+        text ""
+
+    else
+        let
+            relatedWords =
+                list
+                    |> List.filter
+                        (\word ->
+                            (word.words |> List.head |> Maybe.withDefault "") == clickedText
+                        )
+                    |> List.head
+                    |> Maybe.withDefault { words = [], count = 0 }
+                    |> .words
+
+            firstWord =
+                relatedWords |> List.head |> Maybe.withDefault ""
+
+            title =
+                [ span [] [ text "Word " ], span [ class "text__highlight" ] [ text firstWord ], span [] [ text " is mentioned at following sentances:" ] ]
+        in
+        (h3 [ class "section__detail-title" ] title
+            :: (sentances
+                    |> List.filter
+                        (\sentance ->
+                            let
+                                lowerSentance =
+                                    String.toLower sentance
+                            in
+                            relatedWords
+                                |> List.map (\word -> String.contains (String.toLower word) lowerSentance)
+                                |> List.foldr (||) False
+                        )
+                    |> List.indexedMap
+                        (\index sentance ->
+                            let
+                                indexStr =
+                                    index + 1 |> String.fromInt
+                            in
+                            div [ class "section__detail-sentance" ]
+                                [ text (indexStr ++ ".  " ++ sentance) ]
+                        )
+               )
+        )
+            |> div []
+
+
 view : Model -> Html Msg
 view ({ message, list, success, countValues } as model) =
-    div [ class "container" ]
-        [ div [ class "section__input" ]
-            [ h2 [] [ text "Input a paragraph" ]
-            , textarea [ onInput InputText, class "input__textarea" ] []
-            , button [ class "button__submit", onClick FetchWordCloud ] [ text "Generate Word Cloud" ]
-            , div [ class "message", classList [ ( "message__error", not success ), ( "message__success", success ) ] ] [ text message ]
-            , viewWordCloud list model
+    div []
+        [ div [ class "container" ]
+            [ div [ class "section__input" ]
+                [ h2 [] [ text "Input a paragraph" ]
+                , textarea [ onInput InputText, class "input__textarea" ] []
+                , button [ class "button__submit", onClick FetchWordCloud ] [ text "Generate Word Cloud" ]
+                , div [ class "message", classList [ ( "message__error", not success ), ( "message__success", success ) ] ] [ text message ]
+                ]
+            , div [ class "section__config" ]
+                [ h2 [] [ text "Configuration" ]
+                , h3 [] [ text "Limit count" ]
+                , div [] [ text "Word count that is smaller than this value won't show. Therefore, just important words will show." ]
+                , countValues
+                    |> List.map durationOption
+                    |> select [ class "section__config-limitCount", on "change" (Decode.map EditLimitCount (Decode.at [ "target", "value" ] Decode.string)) ]
+                ]
             ]
-        , div [ class "section__config" ]
-            [ h2 [] [ text "Configuration" ]
-            , h3 [] [ text "Limit count" ]
-            , div [] [ text "Word count that is smaller that this value won't show" ]
-            , countValues
-                |> List.map durationOption
-                |> select [ class "section__config-limitCount", on "change" (Decode.map EditLimitCount (Decode.at [ "target", "value" ] Decode.string)) ]
+        , div [ class "container" ]
+            [ div [ class "section__ouput" ]
+                [ viewWordCloud list model
+                ]
+            , div [ class "section__detail" ]
+                [ viewSentances model
+                ]
             ]
         ]
 
@@ -311,11 +396,18 @@ wordDecoder =
         |> required "count" int
 
 
+wordCloudDataDecoder : Decoder WordCloundData
+wordCloudDataDecoder =
+    succeed WordCloundData
+        |> optional "wordCount" (list wordDecoder) []
+        |> optional "sentances" (list string) []
+
+
 wordCloudDecoder : Decoder WordCloundRes
 wordCloudDecoder =
     succeed WordCloundRes
         |> required "success" bool
-        |> optional "data" (list wordDecoder) []
+        |> optional "data" wordCloudDataDecoder { wordCount = [], sentances = [] }
         |> optional "message" string ""
 
 

@@ -1,0 +1,1827 @@
+{
+    "data": {
+        "sentances": [
+            "3+ year experience developing machine learning models at scale from inception to business impact",
+            "Deep understanding of modern machine learning techniques and mathematical underpinning, such as classifications, recommendation systems, optimization and etc.",
+            "Working with data size from Terabyte to Petabyte scale",
+            "Good experience with Python, Java and/or Scala is preferred (2+ years) with solid project experiences",
+            "Master’s Degree with at least 2 years machine learning experience or PhD",
+            "Experience in Deep Learning is a plus",
+            "Experience in product-ionizing machine learning model is a plus",
+            "3+ years experience working with and analyzing large data sets to solve problems",
+            "A PhD or MS in a quantitative field (e.g., Economics, Statistics, Sciences, Engineering, CS)",
+            "Expert knowledge of a scientific computing language (such as R or Python) and SQL",
+            "Strong knowledge of statistics and experimental design",
+            "The ability to communicate results clearly and a focus on driving impact",
+            "Twitter hot trend detection",
+            "4+ years experience doing quantitative analysis",
+            "Fluency in SQL",
+            "Core statistical knowledge",
+            "Proven experience leading data-driven projects from definition to execution: defining metrics, experiment design, communicating actionable insights",
+            "Experience solving analytical problems using quantitative approaches",
+            "Experience managing data sets through statistical software (ex. R, SAS) or other methods",
+            "What are we looking for:",
+            "Bachelor degree in Analytics, Data Science, Mathematics, Computer Science, Information",
+            "Systems, Computer Engineering, or a related technical field",
+            "At least 1-3 years of experience developing Data warehouse and Business",
+            "Intelligence solutions",
+            "Sound knowledge of data warehousing concepts , data modelling/architecture and SQL",
+            "Ability to work in a fast-paced agile development environment",
+            "Knowledge of programming languages such as Scala or Python",
+            "Team player who can liaison with various stakeholders across the organization",
+            "Excellent written and verbal communication skills",
+            "Good to have but not must :",
+            "Experience with relational as well as NoSQL data stores",
+            "Experience with Big Data frameworks such as Hadoop, Spark, etc.",
+            "Experience with Stream processing technologies such as Kafka, Spark streams, etc.",
+            "Experience with performance tuning & query optimization of data warehouse",
+            "systems",
+            "Experience with Cloud technologies such as Azure, AWS, etc. would be nice to have",
+            "Ability to drive initiatives and work independently",
+            "Understanding of performance, scalability and reliability concepts",
+            "Degree in computer science, engineering, mathematics or equivalent",
+            "Previous commercial experience in a data-driven role",
+            "Ability to write clean, maintainable and robust code in Python, Scala, Java or similar languages",
+            "Knowledge of software engineering concepts and best practices",
+            "Familiarity with the latest OSS, cloud, container, query languages and database technologies",
+            "Confirmed experience building data pipelines in production and ability to work across structured, semi-structured and unstructured data",
+            "Experience preparing data for analytics and following a data science workflow",
+            "Commercial client-facing or senior stakeholder management experience",
+            "Strong programming skills in languages such as Python/Java/Scala including building, testing and releasing code into production",
+            "Strong SQL skills and experience working with relational/columnar databases (e.g. SQLServer, Postgres, Oracle, Presto, Hive, BigQuery etc…)",
+            "Knowledge of data modelling techniques and integration patterns",
+            "Practical experience writing data analytic pipelines",
+            "Experience integrating/interfacing with REST APIs / Web Services",
+            "Experience handling data securely",
+            "Experience with agile software delivery and CI/CD processes",
+            "A willingness to learn and find solutions to complex problems",
+            "Experience in data infrastructure ecosystem",
+            "Requirements:",
+            "3+ years of solid experience in building data pipelines",
+            "Proficient in SQL and at least one scripting language, preferably in Python or R, to clean, transform, and denormalise datasets",
+            "Experience with cloud infrastructure (e.g. AWS, GCP) and containerisation",
+            "Experience using shell scripting, big data frameworks (e.g. Hadoop, Spark, Kafka), relational databases (e.g. BigQuery, Redshift) and data lakes (e.g. Google Buckets)",
+            "Familiar with web and customer analytics",
+            "Experience with machine learning is a plus",
+            "Love learning and sharing new technical knowledge, willing to take new challenges",
+            "Possess strong sense of ownership, adaptive to change",
+            "Bachelor’s degree in Computer Science, Physics, Mathematics, Economics or related disciplines is preferred but not necessary",
+            "Programming skills (e.g. Python)",
+            "Keen in data mining and machine learning technologies",
+            "Applicants must be Singapore citizens",
+            "5-8 years programming experience with Python / Java",
+            "Experience with Data Engineering - Hadoop ecosystem and streaming",
+            "Cloud experience, ideally with AWS services",
+            "Excellent communication and collaborative skills",
+            "Evaluating and defining requirements and problem statements",
+            "Developing user documentation, diagrams & flowcharts",
+            "Bachelor’s degree and above in Analytics, Information Systems Management, Computer Science or related fields",
+            "3+ years of experience in data integration strategy, data modeling, designing, building ETLs, data ingestions, and/or transformations",
+            "Experience in working with RDBMS such as DB2, Oracle, Microsoft SQL Server, PostgresSQL, Teradata, etc.",
+            "Experience in data management and integration tool such as Informatica PowerCentre, Oracle Data Integrator, SAP Data Services, Ab Initio, IBM DataStage or Microsoft SSIS",
+            "Process good knowledge and experience in data quality definition, data cleansing and data treatment/profiling process using industry standard tools like Informatica Data Quality, Trillium Software, SAS Data Quality, SAP Data Quality Management, etc. is an advantage",
+            "Good knowledge of data warehouse and data management implementation methodology",
+            "Good knowledge of the Data Management framework, including operating model, data governance, data management, data security, data quality and data architecture",
+            "Experience in Hadoop environment like Cloudera and HortonWorks",
+            "Experience in Cloud technologies including AWS, Azure, Google Cloud",
+            "Experience in API Management software design and build",
+            "Process good knowledge and experience in data visualisation concepts using tools such as Tableau, Microsoft PowerBI, Qlik, etc.",
+            "Experience with Agile Methodology implementation",
+            "Certification in any of database, data integration, data management, visualisation tools and cloud is an added advantage",
+            "Knowledge about the infrastructure paradigms such as OS, network, etc. is an added advantage",
+            "Ability to pick up new tools and able to be independent with minimal guidance from the project leads/managers",
+            "Strong analytical and creative problem-solving capabilities",
+            "Ability to establish personal credibility quickly and demonstrate expertise"
+        ],
+        "wordCount": [
+            {
+                "count": 52,
+                "words": [
+                    "data",
+                    "database",
+                    "databases"
+                ]
+            },
+            {
+                "count": 45,
+                "words": [
+                    "experience",
+                    "experiences",
+                    "experiment",
+                    "experimental"
+                ]
+            },
+            {
+                "count": 13,
+                "words": [
+                    "knowledge"
+                ]
+            },
+            {
+                "count": 11,
+                "words": [
+                    "management",
+                    "managers",
+                    "managing"
+                ]
+            },
+            {
+                "count": 9,
+                "words": [
+                    "year",
+                    "years"
+                ]
+            },
+            {
+                "count": 9,
+                "words": [
+                    "analysis",
+                    "analytic",
+                    "analytical",
+                    "analytics",
+                    "analyzing"
+                ]
+            },
+            {
+                "count": 9,
+                "words": [
+                    "learn",
+                    "learning"
+                ]
+            },
+            {
+                "count": 8,
+                "words": [
+                    "cloud",
+                    "cloudera"
+                ]
+            },
+            {
+                "count": 8,
+                "words": [
+                    "python"
+                ]
+            },
+            {
+                "count": 8,
+                "words": [
+                    "work",
+                    "workflow",
+                    "working"
+                ]
+            },
+            {
+                "count": 8,
+                "words": [
+                    "science",
+                    "sciences",
+                    "scientific"
+                ]
+            },
+            {
+                "count": 7,
+                "words": [
+                    "complex",
+                    "computer",
+                    "computing"
+                ]
+            },
+            {
+                "count": 7,
+                "words": [
+                    "model",
+                    "modeling",
+                    "modelling",
+                    "models",
+                    "modern"
+                ]
+            },
+            {
+                "count": 7,
+                "words": [
+                    "ability"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "SQL"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "good"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "integrating",
+                    "integration",
+                    "integrator"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "language",
+                    "languages"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "related",
+                    "relational"
+                ]
+            },
+            {
+                "count": 6,
+                "words": [
+                    "machine"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "scala",
+                    "scalability"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "tool",
+                    "tools"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "skills"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "engineering"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "degree"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "quality"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "strong"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "process",
+                    "processes",
+                    "processing"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "problem",
+                    "problems"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "technologies"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "software"
+                ]
+            },
+            {
+                "count": 5,
+                "words": [
+                    "build",
+                    "building"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "hadoop"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "warehouse",
+                    "warehousing"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "mathematical",
+                    "mathematics"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "java"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "statistical",
+                    "statistics"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "systems"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "3+"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "design",
+                    "designing"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "concepts"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "programming"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "communicate",
+                    "communicating",
+                    "communication"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "developing",
+                    "development"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "technical",
+                    "techniques"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "informatica",
+                    "information"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "drive",
+                    "driven",
+                    "driving"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "AWS"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "using"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "server",
+                    "services"
+                ]
+            },
+            {
+                "count": 4,
+                "words": [
+                    "defining",
+                    "definition"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "microsoft"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "R"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "least"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "infrastructure"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "plus"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "field",
+                    "fields"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "spark"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "advantage"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "methodology",
+                    "methods"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "quantitative"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "product",
+                    "production"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "oracle"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "pipelines"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "preferably",
+                    "preferred"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "clean",
+                    "cleansing"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "framework",
+                    "frameworks"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "write",
+                    "writing",
+                    "written"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "solve",
+                    "solving"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "agile"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "project",
+                    "projects"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "new"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "including"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "stream",
+                    "streaming",
+                    "streams"
+                ]
+            },
+            {
+                "count": 3,
+                "words": [
+                    "bachelor"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "implementation"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "independent",
+                    "independently"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "impact"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "SAP"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "initiatives",
+                    "initio"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "scale"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "SAS"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "web"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "kafka"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "willing",
+                    "willingness"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "postgres",
+                    "PostgresSQL"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "PowerBI",
+                    "powercentre"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "PhD"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "practical",
+                    "practices"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "performance"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "proficient",
+                    "profiling"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "optimization"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "minimal",
+                    "mining"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "requirements"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "query"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "securely",
+                    "security"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "like"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "across"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "leading",
+                    "leads"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "visualisation"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "added"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "scripting"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "business"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "excellent"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "environment"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "code"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "deep"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "solutions"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "architecture"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "commercial"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "big"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "ecosystem"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "solid"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "economics"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "container",
+                    "containerisation"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "structured"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "stakeholder",
+                    "stakeholders"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "understanding"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "datasets",
+                    "datastage"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "bigquery"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "azure"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "sets"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "expert",
+                    "expertise"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "familiar",
+                    "familiarity"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "terabyte",
+                    "teradata"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "google"
+                ]
+            },
+            {
+                "count": 2,
+                "words": [
+                    "transform",
+                    "transformations"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "would"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "strategy"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "tuning"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "well"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "trillium"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "trend"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "qlik"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "tableau"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "treatment"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "proven"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "underpinning"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "testing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "take"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "preparing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "presto"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "team"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "previous"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "senior"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "RDBMS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "stores"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "quickly"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "twitter"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "sense"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "various"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "sharing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "shell"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "similar"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "singapore"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "size"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "user"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "unstructured"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "role"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "robust"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "results"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "REST"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "sound"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "reliability"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "verbal"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "releasing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "sqlserver"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "redshift"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "SSIS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "recommendation"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "semi"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "standard"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "statements"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "possess"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "1"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "player"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "demonstrate"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "collaborative"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "columnar"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "confirmed"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "core"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "creative"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "credibility"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "CS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "customer"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "db2"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "delivery"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "denormalise"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "pick"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "detection"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "diagrams"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "disciplines"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "documentation"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "equivalent"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "establish"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "etc…"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "etls"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "evaluating"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "execution"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "client"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "clearly"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "classifications"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "citizens"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "2+"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "3"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "4+"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "5"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "8"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "ab"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "able"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "actionable"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "adaptive"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "API"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "apis"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "applicants"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "approaches"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "best"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "buckets"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "capabilities"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "CD"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "certification"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "challenges"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "change"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "CI"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "facing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "fast"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "find"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "liaison"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "love"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "maintainable"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "master"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "metrics"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "MS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "necessary"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "network"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "nice"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "NoSQL"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "one"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "operating"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "organization"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "OS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "OSS"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "ownership"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "paced"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "paradigms"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "patterns"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "personal"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "petabyte"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "physics"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "2"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "latest"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "flowcharts"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "large"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "fluency"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "focus"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "following"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "GCP"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "governance"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "guidance"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "handling"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "hive"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "hortonworks"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "hot"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "IBM"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "ideally"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "inception"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "industry"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "ingestions"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "insights"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "intelligence"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "interfacing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "ionizing"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "keen"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "lakes"
+                ]
+            },
+            {
+                "count": 1,
+                "words": [
+                    "looking"
+                ]
+            }
+        ]
+    },
+    "message": "Wordcloud is generated successfully",
+    "success": true
+}

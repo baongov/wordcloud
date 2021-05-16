@@ -4,12 +4,21 @@ from flask_cors import cross_origin, CORS
 import numpy as np
 import pandas as pd
 from collections import Counter
-import json
 import re
+import copy
 
 
-IGNORE_CHARS = [' ', 'e.g', '.', '?', '!', '...', '\n', "'s", "'",
+IGNORE_CHARS = [' ', 'e.g', '.', '?', '!', '...', '\n', "'s", "'", "\"",
                 ')', ',', ':', '(', '&', '`', '*', '/', '-', ';', '’s']
+
+SENTANCE_SPLIT_CHARS = ['\n', '.']
+
+DECODE_WORDS = {
+    'e.g.': 'T67KpTwywTtGLKR4',
+    'e.g': 'T67KpTwywTtGrL5M',
+    'ex.': 'nHaQnJDz5hjapwHd',
+    'etc.': 'HrKT4cYAdqCYvEJ6'
+}
 
 STOP_WORDS = ['', 'must', 'ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there', 'about', 'once', 'during', 'out', 'very', 'having', 'with', 'they', 'own', 'an', 'be', 'some', 'for', 'do', 'its', 'yours', 'such', 'into', 'of', 'most', 'itself', 'other', 'off', 'is', 's', 'am', 'or', 'who', 'as', 'from', 'him', 'each', 'the', 'themselves', 'until', 'below', 'are', 'we', 'these', 'your', 'his', 'through', 'don', 'nor', 'me', 'were', 'her', 'more', 'himself', 'this', 'down', 'should', 'our', 'their', 'while',
               'above', 'both', 'up', 'to', 'ours', 'had', 'she', 'all', 'no', 'when', 'at', 'any', 'before', 'them', 'same', 'and', 'been', 'have', 'in', 'will', 'on', 'does', 'yourselves', 'then', 'that', 'because', 'what', 'over', 'why', 'so', 'can', 'did', 'not', 'now', 'under', 'he', 'you', 'herself', 'has', 'just', 'where', 'too', 'only', 'myself', 'which', 'those', 'i', 'after', 'few', 'whom', 't', 'being', 'if', 'theirs', 'my', 'against', 'a', 'by', 'doing', 'it', 'how', 'further', 'was', 'here', 'than', 'etc', 'e.g', 'ex']
@@ -21,7 +30,7 @@ SLIENT_VOWELS = ['u', 'e', 'o', 'a', 'i']
 def splitSpecialChar(words, chars):
     if len(chars) == 0:
         return words
-    # print(words)
+
     splitChar = chars[0]
     splitedWords = np.array([])
 
@@ -116,6 +125,27 @@ def groupSimilarWord(words):
     return groupMark
 
 
+def encodeWord(text, decodeWords):
+    """ While processing data, we will tokenize text to words using special character
+    like '.' to split the text down. However this way can affect word like etc. or e.g.,
+    because char '.' here doesn't present for end of a sentence. To avoid dumy word or sentance
+    splitting, we can encode these special words for data processing and decode it later to display
+    """
+    newText = text
+    for (decodeKey, decodeValue) in decodeWords.items():
+        elements = newText.split(decodeKey)
+        newText = decodeValue.join(elements)
+    return newText
+
+
+def decodeWord(text, decodeWords):
+    newText = text
+    for (decodeKey, decodeValue) in decodeWords.items():
+        newText = newText.replace(decodeValue, decodeKey)
+
+    return newText
+
+
 def wordCalculator(text):
     """ Generate number of time that a word happens in text
     Improvement:
@@ -123,6 +153,16 @@ def wordCalculator(text):
     2. Generate word cloud of word's combination (ex. should able detect "data science" instead of understanding only "data" and "science")
     3.
     """
+    # Split to sentances
+    decodeText = encodeWord(text, DECODE_WORDS)
+    sentances = np.array(splitSpecialChar(
+        [decodeText], SENTANCE_SPLIT_CHARS))
+    validSentences = sentances[[
+        sentance != '' and sentance != ' ' for sentance in sentances
+    ]]
+    encodeSentences = np.array([decodeWord(sentance, DECODE_WORDS)
+                                for sentance in validSentences])
+
     # tokenize
     rawWords = splitSpecialChar([text], IGNORE_CHARS)
     capitalWords = toCapitalWords(rawWords)
@@ -172,7 +212,7 @@ def wordCalculator(text):
     # sort result by count
     countSort = countDf.sort_values(by='count', ascending=False)
 
-    return countSort[['words', 'count']]
+    return (countSort[['words', 'count']], encodeSentences)
 
 ###
 
@@ -190,14 +230,16 @@ def hello():
 def worldcloudGenerator():
     # get value of field text
     text = request.form['text']
-    print(text)
 
     # calculate term weights
-    wordCount = wordCalculator(text)
+    (wordCount, sentances) = wordCalculator(text)
 
     # build response
     body = {
-        'data': wordCount.to_dict(orient="records"),
+        'data': {
+            'wordCount': wordCount.to_dict(orient="records"),
+            'sentances': sentances.tolist(),
+        },
         'message': 'Wordcloud is generated successfully',
         'success': True,
     }

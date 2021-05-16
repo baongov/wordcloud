@@ -30,7 +30,11 @@ This visualization tool is to create your own word clouds and tag clouds. You ca
 
    In production mode, change value of `MODE` to `production`
 
-3. Run `docker-compose up`
+3. Run `docker-compose up`\
+   Note that if you've already run `docker-compose up` before but not stopped all docker containers yet, you can simply restart all containers to make the app work again
+   ```
+   docker restart $(docker ps -aq)
+   ```
 
 4. Access http://www.wordcloud.io/
 

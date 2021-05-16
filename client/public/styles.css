@@ -3,17 +3,19 @@
   margin: auto;
   text-align: center;
   display: flex;
+  min-height: 50vh;
 }
 
-.section__input {
-  width: 70%;
+.section__input, .section__ouput {
+  width: 60%;
   border-right: 1px solid black;
   padding-right: 16px;
 }
 
-.section__config {
+.section__config, .section__detail {
   padding-left: 16px;
   text-align: left;
+  width: 40%;
 }
 
 .input__textarea {
@@ -41,7 +43,9 @@
   color: green;
 }
 
-.word__item {}
+.word__item.clicked {
+  font-weight: 700;
+}
 
 .word__item:hover {}
 
@@ -54,6 +58,7 @@
   display: inline-block;
   margin: 4px;
   color: rgb(0, 100, 0);
+  cursor: pointer;
 }
 
 .word__item-container:hover {
@@ -73,4 +78,20 @@
   border: 1px solid black;
   padding: 12px;
   width: fit-content;
+  color: #db8216;
+}
+
+.section__config-limitCount {
+  width: 50%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.section__detail-sentance {
+  font-size: 18px;
+}
+
+.text__highlight {
+  font-weight: 600;
+  color: #db8216;
 }
