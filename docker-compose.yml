@@ -22,8 +22,8 @@ services:
       - ./client:/usr/src/
     ports:
       - 3030:3030
-    
-      
+    command: sh setup.sh
+
   nginx:
     container_name: wordcloud-nginx
     ports:

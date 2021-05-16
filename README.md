@@ -34,6 +34,32 @@ This visualization tool is to create your own word clouds and tag clouds. You ca
 
 4. Access http://www.wordcloud.io/
 
+## Topics
+
+1. Clean up docker containers
+   List of container names need removing
+   ```
+   wordcloud-server
+   wordcloud-client
+   wordcloud-nginx
+   ```
+
+2. Docker files are cache
+   If you edit a Docker file, re-runing docker-compose up won't make the change reflect but re-building the container will help
+   For example of updating client image:
+   ```
+   docker-compose build client 
+   docker-compose up
+   ```
+
+3. Starting many Docker systems could cause port conflict. To guarantee no conflict, all running Docker services need stoping
+   ```
+   docker stop $(docker ps -aq)
+   ```
+   or clean them up 
+   ```
+   docker rm $(docker ps -aq)
+   ```
 ## Demo
 
 <img src="https://via.placeholder.com/400x200/303030/FFFFFF/?text=demo"></img>
